@@ -84,7 +84,6 @@ a {
 #top-makers .makers-logo img {
 	transition: all .7s ease;
 }
-
 /* Media queries */
 
 @media (max-width: 320px) {
@@ -111,5 +110,122 @@ a {
 	}
 	#top-items .item img {
 		left: 30%;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 575px) {
+	#pop-up {
+		width: 90%;
+		height: 50%;
+	}
+	#content {
+		padding-top: 70px;
+	}
+	#search-vehicle {
+		padding: 10px;
+	}
+	#search-vehicle h4 {
+		font-size: 15px;
+		text-align-last: center;
+	}
+	#search-vehicle #btn-search-vehicle {
+		width: 100%;
+	}
+	#items .top-items {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	#top-items .item img {
+		left: 30%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	#pop-up {
+		width: 60%;
+		height: 80%;
+	}
+	#content {
+		padding-top: 70px;
+	}
+	#search-vehicle {
+		padding: 15px;
+	}
+	#search-vehicle h4 {
+		font-size: 16px;
+		text-align-last: center;
+	}
+	#search-vehicle #btn-search-vehicle {
+		width: 100%;
+	}
+	#items .top-items {
+		font-size: 20px;
+		margin-top: 25px;
+	}
+	#top-items .item img {
+		left: 25%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 811px) {
+	#pop-up {
+		width: 80%;
+		height: 40%;
+	}
+	#search-vehicle {
+		padding: 15px;
+	}
+	#search-vehicle h4 {
+		font-size: 20px;
+		text-align-last: center;
+	}
+	#search-vehicle #btn-search-vehicle {
+		width: 100%;
+	}
+	#items .top-items {
+		font-size: 22px;
+		margin-top: 25px;
+	}
+	#top-items .row-fluid {
+		height: 300px;
+	}
+	#top-items .mb-0 {
+		margin-bottom: 15px!important;
+	}
+	#top-items .item img {
+		top: 10%;
+		left: 25%;
+	}
+}
+
+@media (min-width: 812px) and (max-width: 991px) {
+	#pop-up {
+		width: 60%;
+		height: 80%;
+	}
+	#search-vehicle {
+		padding: 15px;
+	}
+	#search-vehicle h4 {
+		font-size: 20px;
+		text-align: center;
+	}
+	#search-vehicle #btn-search-vehicle {
+		width: 100%;
+	}
+	#items .top-items {
+		font-size: 22px;
+		margin-top: 20px;
+		margin-bottom: 20px!important;
+	}
+	#top-items .row-fluid {
+		height: 300px;
+	}
+	#top-items .mb-0 {
+		margin-bottom: 10px!important;
+	}
+	#top-items .item img {
+		top: 10%;
+		left: 20%;
 	}
 }

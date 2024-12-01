@@ -25,3 +25,60 @@ a:focus {
 	box-shadow: none !important;
 	outline: none !important;
 }
+/* them */
+#image {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+
+#image h1 {
+	color: white;
+	font-size: 50px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	font-weight: 600;
+}
+
+#image .container {
+	position: absolute;
+	text-align: center;
+	padding-top: 10%;
+
+}
+
+#image .contain {
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+#image .active {
+	color: white;
+}
+
+/* end */
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+#content {
+	padding: 50px 0;
+}
+
+#content .container {
+	position: relative;
+}
+
+#content .icon {
+	width: 35px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	vertical-align: top;
+}

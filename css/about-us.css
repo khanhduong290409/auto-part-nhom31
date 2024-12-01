@@ -298,3 +298,58 @@ padding-top: 2rem;
 	text-align: center;
 	align-items: center;
 }
+
+#team .container .img {
+	width: 160px;
+	height: 160px;
+	margin-bottom: 14px;
+}
+
+#team .container .img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+#team .details .name {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#team .details .job {
+	font-size: 15px;
+	color: #ff676d;
+}
+
+#team .media-icons a {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+	background-color: #ff676d;
+	margin: 0 4px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	border: 2px transparent;
+	font-size: 14px;
+	line-height: 33px;
+	transition: all 0.4s ease;
+
+}
+
+#team .media-icons a:hover {
+	border-color: #ff676d;
+	color: #ff676d;
+	background: #fff;
+	border: 2px solid;
+
+
+}
+
+#team .media-icons {
+	display: flex;
+	margin-top: 10px;
+}
+
+/* team end */

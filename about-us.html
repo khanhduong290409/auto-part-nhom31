@@ -27,8 +27,70 @@
 </head>
 
 <body>
-
-
+	<header>
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-2 d-none d-md-block">
+					<a href="javascript:void(0)">
+						<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
+					</a>
+				</div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-6 search-input d-none d-md-block">
+							<div class="input-group">
+								<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+								<button id="btn-search-input" class="btn" type="button">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<!--  -->
+						<div class="col-12 d-none d-md-block">
+							<nav class="navbar">
+								<ul class="navbar-nav text-uppercase">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Trang chủ</a>
+									</li>
+									<li id="product-dropdown" class="nav-item">
+										<a class="nav-link" href="product.html">Sản Phẩm <i
+												class="fas fa-caret-down"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">Giới thiệu</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Liên hệ</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+							<a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button"
+								aria-expanded="false" aria-controls="search-input">
+								<img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+							</a>
+							<a id="sidenav" onclick="openNav()">
+								<img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+							</a>
+						</div>
+						<div id="search-input" class="col-12 px-0 collapse">
+							<div class="input-group pb-3">
+								<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+								<div class="input-group-append">
+									<button id="btn-navbarSearch" class="btn btn-primary">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
 
 	
 	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>

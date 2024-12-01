@@ -191,3 +191,51 @@ a {
 	transform: translateY(0);
 }
 /* statistics end */
+/* slogan start */
+#slogan {
+	width: 100%;
+	height: 70vh;
+	background-image: url(../img/background_logan.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	font-size: 16px;
+	font-family: "Roboto", Arial, sans-serif;
+	line-height: 1.8;
+	font-weight: 400;
+	color: white;
+
+}
+
+#slogan .img img {
+	width: 65vh;
+	height: 65vh;
+	position: absolute;
+	top: 1rem;
+	right: 10rem;
+}
+
+
+
+#slogan .content {
+	top: 5rem;
+	right: 3rem;
+	position: absolute;
+	width: 70vh;
+	
+}
+
+#slogan .content .text1 {
+	font-size: 4vh;
+	color: #F2BB2B;
+
+}
+#slogan .content .text2 {
+	font-size: 5vh;
+	font-weight: 600;
+}
+#slogan .content p{
+padding-top: 2rem;
+}
+
+/* slogan end */

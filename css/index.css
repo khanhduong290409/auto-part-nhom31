@@ -59,4 +59,57 @@ a {
 	border-bottom-right-radius: 20px;
 }
 
+#top-makers .item:hover {
+	background-color: rgba(244, 244, 244, 1);
+	transition: all .3s ease;
+	-webkit-box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+}
 
+#top-makers .item h4:before {
+	margin-right: 5px;
+	color: #00AFEF;
+}
+
+#top-makers .makers-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+#top-makers .makers-logo img {
+	transition: all .7s ease;
+}
+
+/* Media queries */
+
+@media (max-width: 320px) {
+	#pop-up {
+		width: 90%;
+		height: 50%;
+	}
+	#content {
+		padding-top: 70px;
+	}
+	#search-vehicle {
+		padding: 10px;
+	}
+	#search-vehicle h4 {
+		font-size: 15px;
+		text-align-last: center;
+	}
+	#search-vehicle #btn-search-vehicle {
+		width: 100%;
+	}
+	#items .top-items {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	#top-items .item img {
+		left: 30%;
+	}
+}

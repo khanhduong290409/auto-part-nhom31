@@ -291,47 +291,197 @@
 			</div>
 		</div>
 		<!-- Team end -->
-		<div id="top-brands">
-			<div class="row align-items-center">
-				<!-- Top brands and makers start -->
-				<div class="col-lg-6">
-					<h4 class="wow slideInLeft">Thương hiệu hàng đầu</h4>
-					<div class="row py-3 pb-lg-5">
-						<div class="col-4 col-lg-4">
-							<img src="img/brands/mercedes-benz.png" alt="img/brands/mercedes-benz.png" />
+		<!-- Content start -->
+	<div id="content">
+		<div class="container">
+			<!-- Cart start -->
+			<div id="cart">
+				<div class="item-inCart">
+					<div class="row align-items-center p-4">
+						<div id="item" class="col-lg-8">
+							<div class="row align-items-center">
+								<div class="col-lg-5 text-center">
+									<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
+									<p class="name"><b>Wearever</b> Unloaded Caliper - Domestic</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<div class="review">(154 reviews) | #18-B4728</div>
+								</div>
+								<div class="col-lg-4 add-toCart text-center">
+									<p class="text-uppercase font-weight-bold text-success"><img
+											src="img/icon/check.png" class="icon" alt="img/icon/check.png" />Added to
+										Cart</p>
+									<p class="text-uppercase font-weight-bold">Card subtotal <span
+											class="font-weight-normal">1 (items)</span></p>
+								</div>
+								<div class="col-lg-3 text-center price">
+									<p class="text-uppercase font-weight-bold text-danger">$63.99</p>
+								</div>
+							</div>
 						</div>
-						<div class="col-4 col-lg-4">
-							<img src="img/brands/audi.png" alt="img/brands/audi.png" />
-						</div>
-						<div class="col-4 col-lg-4">
-							<img src="img/brands/bmw.png" alt="img/brands/bmw.png" />
+						<div class="col-lg-4">
+							<div class="row align-items-center">
+								<div class="col-3 text-right col-sm-2 text-sm-center text-md-right col-lg-4">
+									<button id="btn-removeItem" class="btn btn-danger text-uppercase font-weight-bold"
+										title="Remove item" type="button">&times;</button>
+								</div>
+								<div class="col-9 col-sm-6 offset-sm-2 col-md-6 offset-lg-0 col-lg-8 text-center">
+									<button id="btn-checkout" class="btn btn-primary text-uppercase font-weight-bold"
+										onclick="window.location.href='cart.html'">Proceed to checkout</button>
+								</div>
+							</div>
 						</div>
 					</div>
-					<h4 class="wow slideInLeft">Nhà sản xuất hàng đầu</h4>
-					<div class="row py-3">
-						<div class="col-4 col-lg-4">
-							<img src="img/makers/bosch.png" alt="img/brands/bosch.png" />
+					<button id="btn-closeCart" class="btn" title="Close" type="button">&times;</button>
+				</div>
+			</div>
+			<!-- Cart end -->
+			<!-- Dropdown start -->
+			<div id="dropdown-hover" class="d-none d-md-block">
+				<div class="row no-gutters">
+					<div class="col-md-8">
+						<h3>Most Popular Categories</h3>
+						<div class="row no-gutters">
+							<div class="col-md-6">
+								<h6>Brake Systems</h6>
+								<ul>
+									<li><a>Brake Booster</a></li>
+									<li><a>Brake kits</a></li>
+									<li><a>Vacuum Pump</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Sensors</h6>
+								<ul>
+									<li><a>Camshaft Position</a></li>
+									<li><a>Sensor, Crankshaft Pulse</a></li>
+									<li><a>Vacuum Pump</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Filters</h6>
+								<ul>
+									<li><a>Air Dryer</a></li>
+									<li><a>Air Filter</a></li>
+									<li><a>Fuel Filter</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-md-6 second">
+								<h6>Engine Parts</h6>
+								<ul>
+									<li><a>Engine Electrics</a></li>
+									<li><a>Fuel Supply System</a></li>
+									<li><a>Engine Air Supply</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Cooling Systems</h6>
+								<ul>
+									<li><a>Radiator</a></li>
+									<li><a>Radiator Fan</a></li>
+									<li><a>Thermostat</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Wheel Bearings</h6>
+								<ul>
+									<li><a>Nut</a></li>
+									<li><a>Seal</a></li>
+									<li><a>Split</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-10">
+								<div class="row no-gutters align-items-center offer">
+									<div class="col-md-7">
+										<h5 class="text-uppercase m-0">Let us test your starting & charging systems for
+											free.</h5>
+									</div>
+									<div class="col-md-5">
+										<img src="img/offer.png" alt="img/offer.png" />
+										<button id="btn-learn" class="btn btn-warning text-uppercase"
+											type="button">Learn more<i class="fas fa-caret-right ml-2"></i></button>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-4 col-lg-4">
-							<img src="img/makers/magneti_marelli.png" alt="img/brands/magneti_marelli.png" />
-						</div>
-						<div class="col-4 col-lg-4">
-							<img src="img/makers/hella.png" alt="img/brands/hella.png" />
-						</div>
+					</div>
+					<div class="col-md-4 all-categories">
+						<h4>All Categories</h4>
+						<ul>
+							<li><a>Air Conditioning or Heater</a></li>
+							<li><a>Bearings</a></li>
+							<li><a>Belt Tensioner Kits</a></li>
+							<li><a>Body</a></li>
+							<li><a>Brake Systems</a></li>
+							<li><a>Clutch/-Mounting Parts</a></li>
+							<li><a>Cooling Systems</a></li>
+							<li><a>Electrics Systems</a></li>
+							<li><a>Engine Parts</a></li>
+							<li><a>Exhaust Systems</a></li>
+							<li><a>Filters</a></li>
+							<li><a>Interior Equipment</a></li>
+							<li><a>Other Parts</a></li>
+							<li><a>Rubber-Metal Parts</a></li>
+							<li><a>Sensors</a></li>
+							<li><a>Special Tools</a></li>
+							<li><a>Steering and Suspension Parts</a></li>
+							<li><a>Suspension Damping</a></li>
+							<li><a>Timing Chain and Accessories</a></li>
+							<li><a>Wheel Bearings</a></li>
+							<li><a>Wheel Hubs / Axle Journals</a></li>
+							<li><a>Window Cleaning</a></li>
+						</ul>
 					</div>
 				</div>
-				<!-- Top brands makers end -->
-		 		<!-- Video start -->
-				 <div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0">
-					<div id="player">
-						<iframe width="560" height="315"
-							src="https://www.youtube-nocookie.com/embed/sD8AJ2IR6ZU?si=ul3pu_uVMSqut7rf?rel=0"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<!-- Dropdown end -->
+			<div id="top-brands">
+				<div class="row align-items-center">
+					<!-- Top brands and makers start -->
+					<div class="col-lg-6">
+						<h4 class="wow slideInLeft">Thương hiệu hàng đầu</h4>
+						<div class="row py-3 pb-lg-5">
+							<div class="col-4 col-lg-4">
+								<img src="img/brands/mercedes-benz.png" alt="img/brands/mercedes-benz.png" />
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="img/brands/audi.png" alt="img/brands/audi.png" />
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="img/brands/bmw.png" alt="img/brands/bmw.png" />
+							</div>
+						</div>
+						<h4 class="wow slideInLeft">Nhà sản xuất hàng đầu</h4>
+						<div class="row py-3">
+							<div class="col-4 col-lg-4">
+								<img src="img/makers/bosch.png" alt="img/brands/bosch.png" />
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="img/makers/magneti_marelli.png" alt="img/brands/magneti_marelli.png" />
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="img/makers/hella.png" alt="img/brands/hella.png" />
+							</div>
+						</div>
 					</div>
+					<!-- Top brands makers end -->
+					<!-- Video start -->
+					<div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0">
+						<div id="player">
+							<iframe width="560" height="315"
+								src="https://www.youtube-nocookie.com/embed/sD8AJ2IR6ZU?si=ul3pu_uVMSqut7rf?rel=0"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+					</div>
+					<!-- Video end -->
 				</div>
-				<!-- Video end -->
+			</div>
+		</div>
+	</div>
+	<!-- Content end -->
 	
 	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
 	<script src="jq/jquery-3.3.1.min.js"></script>

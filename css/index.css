@@ -289,4 +289,38 @@ padding-left: 210px;
     color: red;
 }
 
+#gallery p {
+    margin: 0; 
+    padding: 0 10px 5px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.52px;
+    word-wrap: break-word;
+
+}
+
+#gallery h4 {
+    padding: 0 10px;
+    text-transform: uppercase;
+    margin: 3px 0;
+    letter-spacing: 0.6px;
+    line-height: 25px;
+	font-weight: 500;
+	font-size: 15px;
+}
+#gallery p, #gallery h4{
+	color: black;
+	text-align: left;
+	padding-bottom: 3px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#pop-up {
+		width: 70%;
+		height: 40%;
+	}
+}
+
+@media (min-width: 1200px) {}
+
 

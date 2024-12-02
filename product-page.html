@@ -18,7 +18,10 @@
 	<!-- Favicon end -->
 	<!-- CSS and Bootstrap 4 links start -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
   <link rel="stylesheet" href="css/product-page.css">
+  <link rel="stylesheet" href="css/index-product-page.css">
+  <link rel="stylesheet" href="css/cart-product-page.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/feedback.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -174,11 +177,11 @@
                 <div class="buttonsRow">
                   <div class="increment">
         
-                    <img src="/img/icon/icon-minus.svg" id="minus">
+                    <img src="/img/icons/icon-minus.svg" id="minus">
         
                     <input type="number" name="totalItems" id="totalItems" value="1">
         
-                    <img src="/img/icon/icon-plus.svg" id="plus">
+                    <img src="/img/icons/icon-plus.svg" id="plus">
         
                   </div>
                   <div class="callToAction">
@@ -201,7 +204,7 @@
           color:darkslategray;
         }
     </style>
-	  <div class="container">
+	<div class="container">
         <div class="text-box-detail">
           <hr>
           <br>
@@ -266,8 +269,8 @@
 
 
     <hr>
-	<!-- Top items start -->
-	<div id="items">
+	 <!-- Top items start -->
+     <div id="items">
 		<div class="container-fluid">
 					  <button id="btn-left" class="btn" type="button">
 					  <i class="fas fa-chevron-left"></i>
@@ -446,7 +449,13 @@
 			  </div>
 	  </div>
 	  <script src = "js/slide-img-product-page.js"></script>
-	  <script src="js/feedback.js"></script>
-
+	  <script src="jq/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/wow-product-page.js"></script>
+	<script src="js/product-page.js"></script>
+	<script src="js/feedback.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>    
 </body>
 </html>

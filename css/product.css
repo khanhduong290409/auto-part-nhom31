@@ -928,6 +928,59 @@ a {
 		margin: 0 auto;
 	}
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+	#products .numberOfProducts .custom-select.triangle {
+		width: 20%;
+	}
+	#listView .col-lg-4 img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#gridView .image img {
+		width: 60%;
+		margin-bottom: 20px;
+	}
+	#gridView .name {
+		font-size: 14px;
+	}
+	#gridView .review {
+		font-size: 12px;
+	}
+	#gridView .limited {
+		font-size: 12px;
+	}
+	#listView .quantity {
+		font-size: 14px;
+	}
+	#listView .quantity .custom-select.triangle {
+		font-size: 14px;
+		width: 55%;
+	}
+	#gridView .quantity .custom-select.triangle {
+		font-size: 14px;
+		width: 55%;
+	}
+	#gridView .price-cart {
+		font-size: 24px;
+	}
+	#gridView .add-vehicle {
+		font-size: 11px;
+	}
+	#gridView .store-pickup p {
+		font-size: 10px;
+	}
+	#listView .price-cart {
+		font-size: 18px;
+	}
+	#listView .shipping p {
+		font-size: 11px;
+	}
+	#gridView .shipping p {
+		font-size: 12px;
+	}
+}
+@media (min-width: 1200px) {}
+
 
 
 

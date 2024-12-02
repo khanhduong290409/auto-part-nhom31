@@ -34,3 +34,17 @@ img {
 a {
 	text-decoration: none!important;
 }
+#content {
+	padding: 50px 0;
+}
+
+#content .container {
+	position: relative;
+}
+
+#content .icon {
+	width: 30px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	vertical-align: middle;
+}

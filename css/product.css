@@ -722,6 +722,66 @@ a {
 		font-size: 14px;
 	}
 }
+@media (min-width: 576px) and (max-width: 767px) {
+	#search-vehicle {
+		padding: 15px;
+	}
+	#search-vehicle h4 {
+		font-size: 16px;
+		text-align-last: center;
+	}
+	#search-vehicle #btn-search-vehicle {
+		width: 100%;
+	}
+	#products .numberOfProducts .custom-select.triangle {
+		width: 35%;
+	}
+	#listView .col-lg-4 img {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	#gridView .image img {
+		width: 60%;
+		margin-bottom: 10px;
+	}
+	#gridView .item-to-cart {
+		padding: 10px!important;
+	}
+	#listView .name,
+	#gridView .name {
+		font-size: 14px;
+	}
+	#gridView .review {
+		display: block;
+		font-size: 12px;
+	}
+	#listView .quantity {
+		font-size: 14px;
+	}
+	#listView .quantity .custom-select.triangle {
+		font-size: 14px;
+		width: 65%;
+	}
+	#gridView .quantity .custom-select.triangle {
+		font-size: 14px;
+		width: 30%;
+	}
+	#listView .price-cart {
+		font-size: 18px;
+	}
+	#listView .shipping p {
+		font-size: 10px;
+	}
+	#gridView .shipping p {
+		font-size: 12px;
+	}
+	#gridView .shipping .img-cart {
+		position: static;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
 
 
 

@@ -346,4 +346,23 @@ a {
 .activeView img {
 	opacity: 0.3!important;
 }
+#products .numberOfProducts .custom-select.triangle {
+	background: url('../img/icon/select-bottom.png') no-repeat;
+	background-position: 95% 55%;
+	background-size: 30px 30px;
+	width: 15%;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.custom-select-triangle {
+	background: #FFFFFF url('../img/icon/select-top.png') no-repeat!important;
+	background-position: 95% 55%!important;
+	background-size: 30px 30px!important;
+}
+
+#products .numberOfProducts .custom-select:focus {
+	border-color: #00AFEF;
+}
+
 

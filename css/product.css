@@ -328,4 +328,22 @@ a {
 	opacity: 0.8;
 	cursor: not-allowed;
 }
+#product #view {
+	padding: 10px 0;
+	border-top: 3px solid #E4E4E4;
+}
+
+#product #view .view {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#product #view .view img {
+	cursor: pointer;
+	width: 30px;
+}
+
+.activeView img {
+	opacity: 0.3!important;
+}
 

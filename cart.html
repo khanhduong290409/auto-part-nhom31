@@ -133,7 +133,124 @@
             </div>
         </div>
     </header>
-	
+	<!-- Header end -->
+	<!-- Breadcrumb start -->
+	<!-- <nav aria-label="breadcrumb">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Cart</li>
+			</ol>
+		</div>
+	</nav> -->
+	<!-- Breadcrumb end -->
+	<!-- Content start -->
+	<div id="content">
+		<!-- Modal start -->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" id="btn-closeModal" class="close" data-dismiss="modal" aria-label="Close" title="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="form-div">
+							<form action="">
+								<h1 class="d-flex justify-content-center">Đăng nhập</h1>
+								<div class="form-group d-flex justify-content-center username">
+									<input type="text" id="username" class="form-control border-0" name="username" required />
+									<span class="floating-label">Email / Tên tài khoản</span>
+								</div>
+								<div class="form-group d-flex justify-content-center password">
+									<input type="password" id="password" class="form-control border-0" name="password" required />
+									<span class="floating-label">Mật khẩu</span>
+								</div>
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input m-0" value="" onclick="myFunction()" />
+									<span class="checkbox-span"></span>
+									Hiển thị mật khẩu
+								</label>
+								<div class="d-flex justify-content-center">
+									<button type="submit" id="btn-login" class="btn btn-primary">Đăng nhập</button>
+								</div>
+								<label class="form-check-label">
+							<input type="checkbox" class="form-check-input m-0" value="" />
+								<span class="checkbox-span"></span>
+								Lưu tài khoản
+							</label>
+								<div class="d-flex justify-content-center text-center forgotPasword">
+									<a href="javascript:void(0)">Quên mật khẩu?</a>
+								</div>
+							</form>
+							<div class="d-flex justify-content-center">
+								<button id="btn-create" class="btn btn-success" onclick="window.location.href='registration.html'">Tạo tài khoản</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal end -->
+        <div class="container">
+			<!-- Cart start -->
+			<div id="cart-main">
+                <h5>Giỏ hàng của bạn (1)</h5>
+                <div id="checkout-items" class="row no-gutters my-4">
+                    <div class="col-md-7">
+                        <div class="row align-items-center my-3">
+                            <div class="col-lg-3 text-center">
+                                <img src="img/items/oil-4.png" alt="img/items/oil-4.png" class="product-picture" />
+                            </div>
+                            <div class="col-lg-5 text-center text-lg-left add-toCart">
+                                <p class="name"><b>Má phanh Wearever - Nội địa</b></p>
+                                <p>Mã sản phẩm: 18-B4729</p>
+                                <p class="text-uppercase text-primary">Bảo hành thay thế trọn đời</p>
+                                <p class="text-uppercase price">680.000đ</p>
+                                <select class="custom-select triangle">
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <p class="text-uppercase price text-danger font-weight-bold">680.000đ</p>
+                                <button id="btn-remove" class="btn btn-danger">Xóa</button>
+                            </div>
+                            <div class="col-lg-4 add-toCart">
+                                <div class="row mt-3">
+                                    <div class="col-6 col-lg-12 shipping">
+                                        <div class="container">
+                                            <input type="radio" class="radio-button" name="radio" />
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <p>Nhận tại cửa hàng</p>
+                                        <div class="img-shop">
+                                            <img src="img/icon/shop.png" alt="img/icon/shop.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-12 shipping">
+                                        <div class="container">
+                                            <input type="radio" class="radio-button" name="radio" />
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <p>Giao hàng tận nhà</p>
+                                        <div class="img-cart">
+                                            <img src="img/icon/gift.png" alt="img/icon/gift.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+			<!-- Cart end -->
 	
 </body>
 

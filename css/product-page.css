@@ -191,3 +191,213 @@ header #btn-navbarSearch {
 }
 
 /* ----end header----- */
+/* global settings */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/* container */
+
+.container-product {
+  max-width: 1580px;
+  margin:5px auto ;
+}
+
+/* row */
+
+.row-product {
+  margin-top: 60px;
+  width:1200px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  padding: 0 25px;
+}
+.row-product .col-2 #emphasisPicture {
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 0px rgba(5, 2, 35, 1);
+}
+
+/* col-2 */
+.col-2 {
+  flex-basis: 40%;
+  min-width: 700px;
+  
+}
+
+.col-2 #emphasisPicture {
+  max-width: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left:15px;
+}
+
+.smallImg {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* col-4 */
+
+.smallImg .col-4 {
+  flex-basis: 23%;
+}
+.smallImg .col-4 img {
+  width: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.smallImg .col-4 img:hover {
+  opacity: 0.7;
+}
+
+.smallImg .col-4 img.active {
+  opacity: 0.7;
+  border: 3px solid var(--orange);
+  cursor: default;
+}
+
+/* col-2 product description */
+
+.col-2 .companyName {
+  display: block;
+  font-size: 40px;
+  color: darkslategray;
+  font-weight: var(--bold);
+  /* letter-spacing: 0.1em; */
+  margin-bottom: 7px;
+  /* text-transform: uppercase; */
+}
+
+.col-2 h2 {
+  font-size: var(--heading);
+  font-weight: var(--bold);
+  line-height: 58px;
+  margin-bottom: 30px;
+}
+
+.col-2 p {
+  font-size: var(--paragraph);
+  color: hsl(219, 9%, 45%);
+  font-weight: var(--regular);
+  line-height: 25.6px;
+}
+
+.col-2 .price {
+  display: flex;
+  margin: 16px 0 5px;
+  align-items: center;
+}
+
+.col-2 .price .productValue {
+  display: block;
+  font-weight: var(--bold);
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+.col-2 .price .percentage {
+  display: block;
+  padding: 5px;
+  background: var(--paleOrange);
+  color: var(--orange);
+  border-radius: 7px;
+}
+
+.col-2 .totalValue {
+  display: block;
+  text-decoration: line-through;
+  color: hsl(220, 14%, 75%);
+  font-size: 14px;
+}
+
+/* buttonsRow */
+
+.col-2 .buttonsRow {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* increment */
+
+.increment {
+  padding: 5px;
+  background: #f7f8fd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.increment input {
+  background: #f7f8fd;
+  width: 60px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.increment img {
+  cursor: pointer;
+}
+
+/* call to action */
+
+.col-2 .buttonsRow .callToAction {
+  position: relative;
+}
+
+.col-2 .buttonsRow .callToAction button {
+  border: none;
+  background-color: var(--orange);
+  color: #fff;
+  padding: 20px 90px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: var(--bold);
+  text-align: center;
+}
+
+.col-2 .buttonsRow .callToAction button i {
+  margin-right: 7px;
+}
+
+.col-2 .buttonsRow .callToAction button:hover {
+  opacity: 0.6;
+}
+/*-----info and slide img---- */

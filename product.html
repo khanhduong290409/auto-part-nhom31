@@ -39,7 +39,6 @@
 					<li><a href="product.html">Hệ Thống Lọc</a></li> 
 					<li><a href="product.html">Động Cơ</a></li> 
 					<li><a href="product.html">Hệ Thống Điều Hòa</a></li> 
-					<li><a href="product.html">Wheel<span>Bearings</span></a></li>
 				</ul>
 			</li>
 			<li><a href="about-us.html">Giới thiệu</a></li>
@@ -49,7 +48,7 @@
 			<li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal">Đăng nhập</a>
 		</ul>
 		<div id="social">
-			<a class="facebook" href="https://www.facebook.com" title="Facebook">	
+			<a class="facebook" href="https://www.facebook.com" title="Facebook">
 				<img src="img/social/facebook.png" alt="img/social/facebook.png" />
 			</a>
 			<a class="instagram" href="https://www.instagram.com" title="Instagram">
@@ -64,110 +63,116 @@
 		</div>
 	</div>
 	<!-- Sidenav end -->
-	<!-- Header start -->
-	<header>
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-md-2 d-none d-md-block">
-					<a href="index.html">
+	<div id="main"></div>
+		<!-- Header start -->
+		<header>
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-2 d-none d-md-block">
+						<a href="javascript:void(0)">
 						<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
 					</a>
-				</div>
-				<div class="col-md-10">
-					<div class="row">
-						<div class="col-md-6 search-input d-none d-md-block">
-							<div class="input-group">
-								<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
-								<button id="btn-search-input" class="btn" type="button">
+					</div>
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-6 search-input d-none d-md-block">
+								<div class="input-group">
+									<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+									<button id="btn-search-input" class="btn" type="button">
 									<i class="fas fa-search"></i>
 								</button>
+								</div>
 							</div>
-						</div>
-						<div id="registration" class="col-md-6 text-right">
-							<ul class="registration">
-								<li>
-									<a href="registration.html" class="mr-1">
-										<img src="img/icon/user.png" alt="img/icon/profile-icon.png" />
-										<span>Đăng ký</span>
-									</a>
-									<a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
-											<img src="img/icon/password.png" alt="img/icon/password.png" />
-											<span>Đăng nhập</span>
+							<div id="registration" class="col-md-6 text-right">
+								<ul class="registration">
+									<li>
+										<a href="registration.html" class="mr-1">
+											<i class="fa-solid fa-user"></i>
+											<!-- <img src="img/icon/user.png" alt="img/icon/profile-icon.png" /> -->
+											<span>Đăng ký</span>
 										</a>
-									<a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
-										<img src="img/icon/user.png" alt="img/icon/user.png" />
-										<span>Tài khoản</span>
-									</a>
-									<ul id="user-dropdown" class="collapse">
-										<li><a href="admin/index.html"><i class="fas fa-user mr-2"></i>Thông tin người dùng</a></li>
-										<li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất</a></li>
-									</ul>
-								</li>
-								<li>
-									<a id="cart-show" href="javascript:void(0)">
-										<img src="img/icon/basket.png" alt="img/icon/profile-icon.png" />
-										<span>Giỏ hàng (0)</span>
-									</a>
-								</li>
-								<li class="social d-none d-md-inline-block">
-									<a href="https://www.facebook.com" title="Facebook">
-										<img src="img/social/facebook.png" alt="img/social/facebook.png" />
-									</a>
-									<a href="https://www.instagram.com" title="Instagram">
-										<img src="img/social/instagram.png" alt="img/social/instagram.png" />
-									</a>
-									<a href="https://www.youtube.com" title="YouTube">
-										<img src="img/social/youtube.png" alt="img/social/youtube.png" />
-									</a>
-									<a href="https://www.x.com" title="X">
-										<img src="img/social/x.png" alt="img/social/x.png" />
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-12 d-none d-md-block">
-							<nav class="navbar">
-								<ul class="navbar-nav text-uppercase">
-									<li class="nav-item">
-										<a class="nav-link" href="index.html">Trang chủ</a>
-									</li>
-									<li id="product-dropdown" class="nav-item">
-										<a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
+										<a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
+											<i class="fa-solid fa-lock"></i>												
+											<span>Đăng nhập</span>
 											</a>
+										<a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
+											<i class="fa-solid fa-bookmark"></i>											
+											<span>Tài khoản</span>
+										</a>
+										<ul id="user-dropdown" class="collapse">
+											<li><a href="admin/index.html"><i class="fas fa-user mr-2"></i>Thông tin người dùng</a></li>
+											<li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất</a></li>
+										</ul>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="about-us.html">Giới thiệu</a>
+									<li>
+										<a id="cart-show" href="javascript:void(0)">
+											<i class="fa-solid fa-cart-shopping"></i>											
+											<span>Giỏ hàng (0)</span>
+										</a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="contact.html">Liên hệ</a>
+									<li class="social d-none d-md-inline-block">
+										<a href="https://www.facebook.com" title="Facebook">
+											<i class="fa-brands fa-facebook"></i>
+											<!-- <img src="img/social/facebook.png" alt="img/social/facebook.png" /> -->
+										</a>
+										<a href="https://www.instagram.com" title="Instagram">
+											<i class="fa-brands fa-instagram"></i>
+											<!-- <img src="img/social/instagram.png" alt="img/social/instagram.png" /> -->
+										</a>
+										<a href="https://www.youtube.com" title="YouTube">
+											<i class="fa-brands fa-youtube"></i>
+											<!-- <img src="img/social/youtube.png" alt="img/social/youtube.png" /> -->
+										</a>
+										<a href="https://www.x.com" title="X">
+											<i class="fa-brands fa-x-twitter"></i>
+											<!-- <img src="img/social/x.png" alt="img/social/x.png" /> -->
+										</a>
 									</li>
 								</ul>
-							</nav>
-						</div>
-						<div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
-							<a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
-								<img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
-							</a>
-							<a id="sidenav" onclick="openNav()">
-								<img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
-							</a>	
-						</div>
-						<div id="search-input" class="col-12 px-0 collapse">
-							<div class="input-group pb-3">
-								<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
-								<div class="input-group-append">
-									<button id="btn-navbarSearch" class="btn btn-primary">
-										<i class="fas fa-search"></i>
-									</button>
+							</div>
+							<div class="col-12 d-none d-md-block">
+								<nav class="navbar">
+									<ul class="navbar-nav text-uppercase">
+										<li class="nav-item">
+											<a class="nav-link" href="index.html">Trang chủ</a>
+										</li>
+										<li id="product-dropdown" class="nav-item">
+											<a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
+												</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="about-us.html">Giới thiệu</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="contact.html">Liên hệ</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+								<a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
+									<img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+								</a>
+								<a id="sidenav" onclick="openNav()">
+									<img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+								</a>
+							</div>
+							<div id="search-input" class="col-12 px-0 collapse">
+								<div class="input-group pb-3">
+									<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+									<div class="input-group-append">
+										<button id="btn-navbarSearch" class="btn btn-primary">
+											<i class="fas fa-search"></i>
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- Header end -->
+		</header>
+		<!-- Header end -->
 	 <!-- Breadcrumb start -->
 	<nav aria-label="breadcrumb">
 		<div class="container">
@@ -815,13 +820,13 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(154 reviews)</span>
+													<span class="review">(154 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
 													<div class="store-pickup">
 														<p class="m-0"><i class="fas fa-check"></i>Giao hàng nhanh </p>
-														<p class="m-0"><i class="fas fa-check"></i> Giao hàng miễn phí cho các đơn hàng trên 250.000vnđ</p>
+														<p class="m-0"><i class="fas fa-check"></i>Miễn phí cho các đơn trên 250.000vnđ</p>
 													</div>
 												</div>
 											</div>
@@ -851,7 +856,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Giao hàng miễn phí đơn trên 250.000vnđ</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -868,13 +873,13 @@
 													<img src="img/items/item-2.jpg" alt="img/items/item-2.jpg" />
 												</div>
 												<div class="col-lg-8 text-center text-sm-left py-3">
-													<h3 class="name"><b>concac</b> Brake Parts Cleaner</h3>
+													<h3 class="name"><b>Wearever</b> Brake Parts Cleaner</h3>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(577 reviews)</span>
+													<span class="review">(577 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 animated pulse infinite"><span class="text-danger">90.000vnđ</span> <del class="ml-4 text-muted">$300.000vnđ</del></p>
@@ -910,7 +915,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -933,7 +938,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star"></span>
-													<span class="review">(124 reviews)</span>
+													<span class="review">(124 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">200.000vnđ</p>
@@ -969,7 +974,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -992,7 +997,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(154 reviews)</span>
+													<span class="review">(154 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">120.000vnđ</p>
@@ -1028,7 +1033,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -1051,7 +1056,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(154 reviews)</span>
+													<span class="review">(154 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">330.000vnđ</p>
@@ -1087,7 +1092,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -1110,7 +1115,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(29 reviews)</span>
+													<span class="review">(29 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1146,7 +1151,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -1169,7 +1174,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(154 reviews)</span>
+													<span class="review">(154 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1205,7 +1210,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -1228,7 +1233,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(154 reviews)</span>
+													<span class="review">(154 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1264,7 +1269,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -1288,7 +1293,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star"></span>
-													<span class="review">(54 reviews)</span>
+													<span class="review">(54 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1324,7 +1329,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -1347,7 +1352,7 @@
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
 													<span class="fas fa-star checked"></span>
-													<span class="review">(46 reviews)</span>
+													<span class="review">(46 đánh giá)</span>
 													<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1383,7 +1388,7 @@
 														<span class="checkmark"></span>
 													</div>
 													<p><span class="text-uppercase font-weight-bold">Giao hàng tận nơi</span>
-														<br />Miễn phí giao hàng các đơn trên 250.000vnd</p>
+														<br />Miễn phí các đơn trên 250.000 VNĐ</p>
 													<div class="img-cart">
 														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
 													</div>
@@ -1412,7 +1417,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1473,7 +1478,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1536,7 +1541,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1597,7 +1602,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(46 reviews)</span>
+															<span class="review">(46 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 													<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 													<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1660,7 +1665,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1721,7 +1726,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1784,7 +1789,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(111 reviews)</span>
+															<span class="review">(111 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1845,7 +1850,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1908,7 +1913,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -1969,7 +1974,7 @@
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
 															<span class="fas fa-star checked"></span>
-															<span class="review">(154 reviews)</span>
+															<span class="review">(154 đánh giá)</span>
 															<p class="limited text-uppercase pt-3">Đổi hàng trong 7 ngày</p>
 															<a class="add-vehicle">Tìm kiếm sản phẩm tương tự</a>
 															<p class="price-cart text-uppercase font-weight-bold mt-4 ">300.000vnđ</p>
@@ -2022,11 +2027,11 @@
 						</div>
 						<nav aria-label="Page navigation example" class="mt-4">
 							<ul class="pagination justify-content-end">
-								<li class="page-item"> <a class="page-link" href="#" tabindex="-1">Previous</a> </li>
+								<li class="page-item"> <a class="page-link" href="#" tabindex="-1">Trang trước</a> </li>
 								<li class="page-item active"><a class="page-link" href="#">1</a></li>
 								<li class="page-item"><a class="page-link" href="#">2</a></li>
 								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+								<li class="page-item"> <a class="page-link" href="#">Trang tiếp theo</a> </li>
 							</ul>
 						</nav>
 					</div>

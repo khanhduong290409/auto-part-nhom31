@@ -247,7 +247,44 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="col-md-5 pl-lg-5">
+                        <div id="paypal" class="text-uppercase">
+                            <button id="btn-paypal" class="btn"><img src="img/icon/paypal.png" alt="img/icon/paypal.png" /> Thanh toán PayPal</button>
+                        </div>
+                        <div id="checkout-div">
+                            <div id="order-summary">
+                                <h4 class="text-uppercase text-center font-weight-bold m-0">Tóm tắt đơn hàng</h4>
+                            </div>
+                            <div id="checkout-total">
+                                <div class="promo-code-div">
+                                    <p class="text-uppercase">Nhập mã khuyến mãi hoặc mã giảm giá tại đây</p>
+                                    <a class="btn-collapse" data-toggle="collapse" href="#promo-code" role="button" aria-expanded="true" aria-controls="promo-code" title="Collapse"></a>
+                                    <div id="promo-code" class="collapse show">
+                                        <div class="input-group">
+                                            <input type="text" class="code" />
+                                            <button id="btn-apply" class="btn btn-primary" disabled>Áp dụng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="subtotal" class="text-uppercase">
+                                    Tạm tính<span class="text-danger font-weight-bold float-right">680.000đ</span>
+                                </div>
+                                <div id="shipping" class="text-uppercase">
+                                    <p>Ước tính phí giao hàng</p><span class="font-weight-bold float-right">Miễn phí</span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Nhập mã bưu chính để ước tính phí giao hàng" />
+                                        <button id="btn-go" class="btn btn-primary">Xem</button>
+                                    </div>
+                                </div>
+                                <div id="total" class="text-uppercase">
+                                    Tổng cộng<span class="float-right">680.000đ</span>
+                                </div>
+                                <div id="checkout-now" class="text-uppercase">
+                                    <button id="btn-checkout-now" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='checkout.html'">Thanh toán ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 			<!-- Cart end -->

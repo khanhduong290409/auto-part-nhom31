@@ -185,6 +185,135 @@ a {
 	transition: .2s;
 }
 
+#items {
+	padding-top: 50px;
+	position: relative;
+}
+
+#items .top-items {
+	color: #000000;
+	font-weight: bold;
+}
+
+#items #btn-left {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 3rem;
+	z-index: 9998;
+	cursor: pointer;
+	position: absolute;
+	top: 55%;
+	left: 2%;
+	transform: translate(-2%, -55%);
+}
+
+#items #btn-left:hover {
+	opacity: 0.8;
+}
+
+#items #btn-right {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 3rem;
+	z-index: 9998;
+	cursor: pointer;
+	position: absolute;
+	top: 55%;
+	right: 2%;
+	transform: translate(-2%, -55%);
+}
+
+#items #btn-right:hover {
+	opacity: 0.8;
+}
+
+#top-items {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	color: #000000;
+}
+
+#top-items .row-fluid {
+	display: flex;
+	height: 250px;
+	margin-bottom: 30px;
+}
+
+#top-items .row-fluid .col-3 {
+	display: inline-block;
+}
+
+#top-items .item {
+	height: 100%;
+}
+
+#top-items .item img {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	transform: translate(-20%, 0);
+	width: 160px;
+	height: 150px;
+	cursor: pointer;
+}
+
+#top-items .item .text {
+	height: 35%;
+	position: absolute;
+	bottom: 0;
+	padding-left: 5px;
+	padding-right: 30px;
+	font-size: 13px;
+}
+
+#top-items .item .text p:first-child {
+	height: 45%;
+}
+
+#top-items .item .fa-star {
+	color: rgb(188, 188, 188);
+}
+
+#top-items .item .fa-star.checked {
+	color: rgb(255, 204, 0);
+}
+
+#top-items.dragscroll {
+	cursor: move;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+
+#top-items.dragscroll:active {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+#top-items::-webkit-scrollbar {
+	height: 5px;
+}
+
+#top-items::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+}
+
+#top-items::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#top-items::-webkit-scrollbar-track {
+	background-color: #D6D6D6;
+	border-radius: 8px;
+}
+
 
 @media (min-width: 1200px) {}
 

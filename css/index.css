@@ -313,6 +313,87 @@ a {
 	background-color: #D6D6D6;
 	border-radius: 8px;
 }
+#brands {
+	padding-top: 50px;
+}
+
+#top-brands .item {
+	height: 250px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	color: #000000;
+	cursor: pointer;
+	background-color: rgba(244, 244, 244, 0.6);
+	transition: all .5s ease;
+	border-bottom-right-radius: 20px;
+}
+
+#top-brands .item:hover {
+	background-color: rgba(244, 244, 244, 1);
+	transition: all .3s ease;
+	-webkit-box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+}
+
+#top-brands .item h4:before {
+	margin-right: 5px;
+	color: #00AFEF;
+}
+
+#top-brands .brands-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+#top-brands .brands-logo img {
+	transition: all .7s ease;
+}
+
+#all-brands .item {
+	height: 120px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	color: #000000;
+	cursor: pointer;
+	background-color: rgba(244, 244, 244, 0.6);
+	transition: all .5s ease;
+	border-bottom-right-radius: 20px;
+}
+
+#all-brands .item:hover {
+	background-color: rgba(244, 244, 244, 1);
+	transition: all .3s ease;
+	-webkit-box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.75);
+}
+
+#all-brands .item h4 {
+	font-size: 14px;
+}
+
+#all-brands .item h4:before {
+	margin-right: 5px;
+	color: #00AFEF;
+}
+
+#all-brands .brands-logo {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	width: 85%;
+	transform: translate(-50%, -65%);
+	padding: 10px;
+}
+
+#all-brands .brands-logo img {
+	transition: all .7s ease;
+}
 
 
 @media (min-width: 1200px) {}

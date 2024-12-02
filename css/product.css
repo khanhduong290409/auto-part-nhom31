@@ -282,3 +282,50 @@ a {
 	cursor: pointer;
 	font-size: 15px;
 }
+#search-vehicle {
+	padding: 15px;
+	margin-bottom: 20px;
+	background-color: rgba(240, 240, 240, 0.7);
+	border-radius: 3px;
+	border: 1px solid transparent;
+	color: #000000;
+}
+
+#products #search-vehicle h4 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+#products #search-vehicle .custom-select.arrow {
+	font-size: 12px;
+	width: 100%;
+	background: #FFFFFF url('../img/icon/arrow-black-bottom.png') no-repeat;
+	background-position: 98% 55%;
+	background-size: 26px 26px;
+	color: #000000;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#products #search-vehicle .custom-select:focus {
+	border-color: #00AFEF;
+}
+
+#products #search-vehicle .custom-select:disabled {
+	color: #58595B;
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+
+#products #search-vehicle #btn-search-vehicle {
+	width: 100%;
+	font-weight: bold;
+	border: 1px solid transparent;
+}
+
+#products #search-vehicle #btn-search-vehicle:disabled {
+	background-color: #58595b;
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+

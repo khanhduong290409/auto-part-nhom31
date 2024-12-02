@@ -394,11 +394,26 @@ a {
 #all-brands .brands-logo img {
 	transition: all .7s ease;
 }
+#seeMore {
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+}
 
+.seeMore {
+	font-size: 20px;
+	transition: all .3s ease;
+	cursor: pointer;
+}
 
-@media (min-width: 1200px) {}
-
-
+.seeLess {
+	font-size: 20px;
+	transition: all .3s ease;
+	display: none;
+	cursor: pointer;
+}
 #makers {
 	padding-top: 50px;
 }
@@ -523,10 +538,6 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 811px) {
-	#pop-up {
-		width: 80%;
-		height: 40%;
-	}
 	#search-vehicle {
 		padding: 15px;
 	}

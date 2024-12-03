@@ -663,4 +663,45 @@
   }
   /* Styling The Products Section */
   /* Styling The Booking Content */
-  
+  .orders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.order {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.order img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.order-details {
+    flex-grow: 1;
+}
+
+.order h4 {
+    margin: 0 0 10px;
+}
+
+.complete-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.complete-btn:hover {
+    background-color: #45a049;
+}

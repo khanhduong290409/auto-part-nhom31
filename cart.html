@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tag start-->
+	<meta charset="UTF-8" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="theme-color" content="#58595B" />
+	<meta name="msapplication-navbutton-color" content="#58595B" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
+	<!-- Meta tag end-->
+	<title>Cart</title>
+	<!-- Favicon start -->
+	<link rel="icon" href="img/logo.png" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+	<!-- Favicon end -->
+	<!-- CSS and Bootstrap 4 link start -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/cart.css">
+	<!-- CSS and Bootstrap 4 link start end -->
+</head>
+
+<body>
+	<header>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-2 d-none d-md-block">
+                    <a href="javascript:void(0)">
+                    <img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
+                </a>
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6 search-input d-none d-md-block">
+                            <div class="input-group">
+                                <input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+                                <button id="btn-search-input" class="btn" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div id="registration" class="col-md-6 text-right">
+                            <ul class="registration">
+                                <li>
+                                    <a href="registration.html" class="mr-1">
+                                        <i class="fa-solid fa-user"></i>
+                                        <!-- <img src="img/icon/user.png" alt="img/icon/profile-icon.png" /> -->
+                                        <span>Đăng ký</span>
+                                    </a>
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
+                                        <i class="fa-solid fa-lock"></i>												
+                                        <span>Đăng nhập</span>
+                                        </a>
+                                    <a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
+                                        <i class="fa-solid fa-bookmark"></i>											
+                                        <span>Tài khoản</span>
+                                    </a>
+                                    <ul id="user-dropdown" class="collapse">
+                                        <li><a href="user.html"><i class="fas fa-user mr-2"></i>Cài đặt></li>
+                                            <li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a id="cart-show" href="javascript:void(0)">
+                                        <i class="fa-solid fa-cart-shopping"></i>											
+                                        <span>Giỏ hàng (0)</span>
+                                    </a>
+                                </li>
+                                <li class="social d-none d-md-inline-block">
+                                    <a href="https://www.facebook.com" title="Facebook">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <!-- <img src="img/social/facebook.png" alt="img/social/facebook.png" /> -->
+                                    </a>
+                                    <a href="https://www.instagram.com" title="Instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <!-- <img src="img/social/instagram.png" alt="img/social/instagram.png" /> -->
+                                    </a>
+                                    <a href="https://www.youtube.com" title="YouTube">
+                                        <i class="fa-brands fa-youtube"></i>
+                                        <!-- <img src="img/social/youtube.png" alt="img/social/youtube.png" /> -->
+                                    </a>
+                                    <a href="https://www.x.com" title="X">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                        <!-- <img src="img/social/x.png" alt="img/social/x.png" /> -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 d-none d-md-block">
+                            <nav class="navbar">
+                                <ul class="navbar-nav text-uppercase">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li id="product-dropdown" class="nav-item">
+                                        <a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
+                                            </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about-us.html">Giới thiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+                            <a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
+                                <img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+                            </a>
+                            <a id="sidenav" onclick="openNav()">
+                                <img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+                            </a>
+                        </div>
+                        <div id="search-input" class="col-12 px-0 collapse">
+                            <div class="input-group pb-3">
+                                <input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+                                <div class="input-group-append">
+                                    <button id="btn-navbarSearch" class="btn btn-primary">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+		<!-- Header end -->
+	<!-- Breadcrumb start -->
+	<!-- <nav aria-label="breadcrumb">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Cart</li>
+			</ol>
+		</div>
+	</nav> -->
+	<!-- Breadcrumb end -->
+	<!-- Content start -->
+	<div id="content">
+		<!-- Modal start -->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" id="btn-closeModal" class="close" data-dismiss="modal" aria-label="Close" title="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="form-div">
+							<form action="">
+								<h1 class="d-flex justify-content-center">Đăng nhập</h1>
+								<div class="form-group d-flex justify-content-center username">
+									<input type="text" id="username" class="form-control border-0" name="username" required />
+									<span class="floating-label">Email / Tên tài khoản</span>
+								</div>
+								<div class="form-group d-flex justify-content-center password">
+									<input type="password" id="password" class="form-control border-0" name="password" required />
+									<span class="floating-label">Mật khẩu</span>
+								</div>
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input m-0" value="" onclick="myFunction()" />
+									<span class="checkbox-span"></span>
+									Hiển thị mật khẩu
+								</label>
+								<div class="d-flex justify-content-center">
+									<button type="submit" id="btn-login" class="btn btn-primary">Đăng nhập</button>
+								</div>
+								<label class="form-check-label">
+							<input type="checkbox" class="form-check-input m-0" value="" />
+								<span class="checkbox-span"></span>
+								Lưu tài khoản
+							</label>
+								<div class="d-flex justify-content-center text-center forgotPasword">
+									<a href="javascript:void(0)">Quên mật khẩu?</a>
+								</div>
+							</form>
+							<div class="d-flex justify-content-center">
+								<button id="btn-create" class="btn btn-success" onclick="window.location.href='registration.html'">Tạo tài khoản</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal end -->
+        <div class="container">
+			<!-- Cart start -->
+			<div id="cart-main">
+                <h5>Giỏ hàng của bạn (1)</h5>
+                <div id="checkout-items" class="row no-gutters my-4">
+                    <div class="col-md-7">
+                        <div class="row align-items-center my-3">
+                            <div class="col-lg-3 text-center">
+                                <img src="img/items/oil-4.png" alt="img/items/oil-4.png" class="product-picture" />
+                            </div>
+                            <div class="col-lg-5 text-center text-lg-left add-toCart">
+                                <p class="name"><b>Má phanh Wearever - Nội địa</b></p>
+                                <p>Mã sản phẩm: 18-B4729</p>
+                                <p class="text-uppercase text-primary">Bảo hành thay thế trọn đời</p>
+                                <p class="text-uppercase price">680.000đ</p>
+                                <select class="custom-select triangle">
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <p class="text-uppercase price text-danger font-weight-bold">680.000đ</p>
+                                <button id="btn-remove" class="btn btn-danger">Xóa</button>
+                            </div>
+                            <div class="col-lg-4 add-toCart">
+                                <div class="row mt-3">
+                                    <div class="col-6 col-lg-12 shipping">
+                                        <div class="container">
+                                            <input type="radio" class="radio-button" name="radio" />
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <p>Nhận tại cửa hàng</p>
+                                        <div class="img-shop">
+                                            <img src="img/icon/shop.png" alt="img/icon/shop.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-12 shipping">
+                                        <div class="container">
+                                            <input type="radio" class="radio-button" name="radio" />
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <p>Giao hàng tận nhà</p>
+                                        <div class="img-cart">
+                                            <img src="img/icon/gift.png" alt="img/icon/gift.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 pl-lg-5">
+                        <div id="paypal" class="text-uppercase">
+                            <button id="btn-paypal" class="btn"><img src="img/icon/paypal.png" alt="img/icon/paypal.png" /> Thanh toán PayPal</button>
+                        </div>
+                        <div id="checkout-div">
+                            <div id="order-summary">
+                                <h4 class="text-uppercase text-center font-weight-bold m-0">Tóm tắt đơn hàng</h4>
+                            </div>
+                            <div id="checkout-total">
+                                <div class="promo-code-div">
+                                    <p class="text-uppercase">Nhập mã khuyến mãi hoặc mã giảm giá tại đây</p>
+                                    <a class="btn-collapse" data-toggle="collapse" href="#promo-code" role="button" aria-expanded="true" aria-controls="promo-code" title="Collapse"></a>
+                                    <div id="promo-code" class="collapse show">
+                                        <div class="input-group">
+                                            <input type="text" class="code" />
+                                            <button id="btn-apply" class="btn btn-primary" disabled>Áp dụng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="subtotal" class="text-uppercase">
+                                    Tạm tính<span class="text-danger font-weight-bold float-right">680.000đ</span>
+                                </div>
+                                <div id="shipping" class="text-uppercase">
+                                    <p>Ước tính phí giao hàng</p><span class="font-weight-bold float-right">Miễn phí</span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Nhập mã bưu chính để ước tính phí giao hàng" />
+                                        <button id="btn-go" class="btn btn-primary">Xem</button>
+                                    </div>
+                                </div>
+                                <div id="total" class="text-uppercase">
+                                    Tổng cộng<span class="float-right">680.000đ</span>
+                                </div>
+                                <div id="checkout-now" class="text-uppercase">
+                                    <button id="btn-checkout-now" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='checkout.html'">Thanh toán ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- Cart end -->
+        </div>
+			
+
+		<!-- Top items start -->
+		 <!-- Top items start -->
+         <div id="items">
+            <div class="container-fluid">
+                          <button id="btn-left" class="btn" type="button">
+                          <i class="fas fa-chevron-left"></i>
+                      </button>
+                          <button id="btn-right" class="btn" type="button">
+                          <i class="fas fa-chevron-right"></i>
+                      </button>
+                      </div>
+                      <h3 class="top-items text-uppercase text-center mb-5">Các sản phẩm khác có thể phù hợp với bạn</h3>
+                      <div class="container">
+                          <div id="top-items" class="dragscroll">
+                              <div class="row-fluid no-gutters">
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-1">
+                                          <img src="img/items/item-1.jpg" alt="img/items/item-1.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 1</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="review ml-2">(69)</span>
+                                              <span class="review ml-2">| # 120764</span>
+                                              <p class="price font-weight-bold m-0 mt-3">190.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-2">
+                                          <img src="img/items/item-2.jpg" alt="img/items/item-2.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 1</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="review ml-2">(375)</span>
+                                              <span class="review ml-2">| # W7340</span>
+                                              <p class="price font-weight-bold m-0 mt-3">76.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-3">
+                                          <img src="img/items/item-3.jpg" alt="img/items/item-3.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 2</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="review ml-2">(262)</span>
+                                              <span class="review ml-2">| # W7341</span>
+                                              <p class="price font-weight-bold m-0 mt-3">98.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-4">
+                                          <img src="img/items/item-4.jpg" alt="img/items/item-4.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 3</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="review ml-2">(106)</span>
+                                              <span class="review ml-2">| # 602371</span>
+                                              <p class="price font-weight-bold m-0 mt-3">109.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-5">
+                                          <img src="img/items/item-5.jpg" alt="img/items/item-5.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 4 </p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="review ml-2">(70)</span>
+                                              <span class="review ml-2">| # 5079279-2</span>
+                                              <p class="price font-weight-bold m-0 mt-3">105.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-6">
+                                          <img src="img/items/item-6.jpg" alt="img/items/item-6.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Ắc quy</span> loại 1</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="review ml-2">(1174)</span>
+                                              <span class="review ml-2">| # 35-2</span>
+                                              <p class="price font-weight-bold m-0 mt-3">800.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-7">
+                                          <img src="img/items/oil-1.png" alt="img/items/oil-1.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 1</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="review ml-2">(69)</span>
+                                              <span class="review ml-2">| # 120764</span>
+                                              <p class="price font-weight-bold m-0 mt-3">543.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-8">
+                                          <img src="img/items/oil-2.png" alt="img/items/oil-2.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 2</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="review ml-2">(69)</span>
+                                              <span class="review ml-2">| # 120764</span>
+                                              <p class="price font-weight-bold m-0 mt-3">654.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-9">
+                                          <img src="img/items/oil-3.png" alt="img/items/oil-3.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 3</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="review ml-2">(69)</span>
+                                              <span class="review ml-2">| # 120764</span>
+                                              <p class="price font-weight-bold m-0 mt-3">643.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-md-4">
+                                      <div class="item" id="item-10">
+                                          <img src="img/items/oil-4.png" alt="img/items/oil-4.jpg" />
+                                          <div class="text">
+                                              <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 4</p>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star checked"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="fas fa-star"></span>
+                                              <span class="review ml-2">(69)</span>
+                                              <span class="review ml-2">| # 120764</span>
+                                              <p class="price font-weight-bold m-0 mt-3">432.000 đ</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+		<!-- Top items end -->
+
+	<!-- Content end -->
+	<!-- Footer start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <h5>Giới thiệu</h5>
+                    <div class="about-us">
+                        <img src="img/logo.png" class="logo" alt="img/logo.png" />
+                        <p>Công ty chúng tôi chuyên cung cấp các loại phụ tùng ô tô chất lượng cao từ các thương hiệu uy tín hàng đầu thế giới. Với cam kết đem đến cho khách hàng những sản phẩm bền bỉ, đáng tin cậy và giá cả cạnh tranh, chúng tôi cung cấp đa dạng các loại phụ tùng từ hệ thống phanh, bộ giảm xóc, hệ thống lái, đến các bộ phận động cơ và cảm biến. Đội ngũ tư vấn viên chuyên nghiệp luôn sẵn sàng hỗ trợ khách hàng tìm kiếm giải pháp tối ưu cho nhu cầu sửa chữa và bảo trì xe. Đến với chúng tôi, bạn hoàn toàn có thể yên tâm về chất lượng sản phẩm và dịch vụ chăm sóc khách hàng.</p>
+                    </div>
+                    <div class="contact">
+                        <p class="mb-0">
+                            <i class="fas fa-phone"></i> 0949772176
+                        </p>
+                        <p class="mb-0">
+                            <i class="fas fa-fax"></i>Mã số thuế : 0316885478
+                        </p>
+                        <p class="mb-0">
+                            <i class="fas fa-envelope"></i>Email:<a class="email" href="mailto:emailto@mail.com" title="Send message"> autotrust@email.com</a>
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com" title="Facebook">
+                            <img src="img/social/facebook.png" alt="img/social/facebook.png" />
+                        </a>
+                        <a href="https://www.instagram.com" title="Instagram">
+                            <img src="img/social/instagram.png" alt="img/social/instagram.png" />
+                        </a>
+                        <a href="https://www.youtube.com" title="YouTube">
+                            <img src="img/social/youtube.png" alt="img/social/youtube.png" />
+                        </a>
+                        <a href="https://www.x.com" title="X">
+                            <img src="img/social/x.png" alt="img/social/x.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i><a href="javascript:void(0)">Trang Chủ</a></li>
+                                <li><i class="fas fa-angle-double-right"></i><a href="product.html">Sản phẩm</a></li>
+                                <li><i class="fas fa-angle-double-right"></i><a href="about-us.html">Giới thiệu</a></li>
+                                <li><i class="fas fa-angle-double-right"></i><a href="contact.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 pay">
+                            <h5 class="mt-4">Phương thức thanh toán</h5>
+                            <img src="img/pay/visa.png" title="Visa" alt="img/pay/visa.png" />
+                            <img src="img/pay/master-card.png" title="MasterCard" alt="img/pay/master-card.png" />
+                            <img src="img/pay/momo.png" title="Momo" alt="img/pay/momo.png" />
+                            <img src="img/pay/vnpay.png" title="VnPay" alt="img/pay/vnpay.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>Giờ làm việc</h5>
+                    <p class="font-weight-bold">Văn phòng</p>
+                    <p>Thứ 2 - Thứ 6
+                        <br /><span class="font-weight-bold">08h:00 - 19h:00</span> </p>
+                    <p>Thứ 7
+                        <br /><span class="font-weight-bold">08h:00 - 14h:00</span> </p>
+                    <p class="pt-4 font-weight-bold">Cửa hàng</p>
+                    <p>Thứ 2 - Thứ 6
+                        <br /><span class="font-weight-bold">08h:00 - 19h:00</span> </p>
+                    <p>Thứ 7
+                        <br /><span class="font-weight-bold">08h:00- 14h:00 </span></p>
+                    <p><span class="text-uppercase">đóng cửa</span> vào chủ nhật</p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>Liên hệ ngay</h5>
+                    <form action="">
+                        <label>Tên * </label>
+                        <input type="text" name="name" required />
+                        <label>Email * </label>
+                        <input type="email" name="email" required />
+                        <label>Lời nhắn * </label>
+                        <textarea name="mssg" required rows="3" placeholder="Nhập lời nhắn của bạn ... "></textarea>
+                        <button id="btn-send" class="btn mt-2" type="submit">Gửi</button>
+                    </form>
+                    <h5 class="mt-4">Đăng ký nhận tin</h5>
+                    <p class="subscribe">Đăng ký nhận tin để được cập nhật thông tin mới nhất về chương trình khuyến mãi và các ưu đãi đặc biệt	của chúng tôi</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Nhập địa chỉ Email của bạn" aria-describedby="basic-addon2" required />
+                            <button id="btn-subscribe" class="btn" type="submit">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<!-- Footer end -->
+	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<script src="jq/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/wow-product-page.js"></script>
+	<script src="js/product-page.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>    
+	<!-- JavaScript links end -->
+</body>
+
+</html>

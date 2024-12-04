@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tag start-->
+	<meta charset="UTF-8" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="theme-color" content="#58595B" />
+	<meta name="msapplication-navbutton-color" content="#58595B" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
+	<!-- Meta tag end-->
+	<title>Checkout</title>
+	<!-- Favicon start -->
+	<link rel="icon" href="img/logo.png" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<!-- Favicon end -->
+	<!-- CSS and Bootstrap 4 link start -->
+	<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/checkout.css" />
+
+	<!-- CSS and Bootstrap 4 link start end -->
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-2 d-none d-md-block">
+                <a href="javascript:void(0)">
+                <img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
+            </a>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6 search-input d-none d-md-block">
+                        <div class="input-group">
+                            <input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+                            <button id="btn-search-input" class="btn" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div id="registration" class="col-md-6 text-right">
+                        <ul class="registration">
+                            <li>
+                                <a href="registration.html" class="mr-1">
+                                    <i class="fa-solid fa-user"></i>
+                                    <!-- <img src="img/icon/user.png" alt="img/icon/profile-icon.png" /> -->
+                                    <span>Đăng ký</span>
+                                </a>
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
+                                    <i class="fa-solid fa-lock"></i>												
+                                    <span>Đăng nhập</span>
+                                    </a>
+                                <a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
+                                    <i class="fa-solid fa-bookmark"></i>											
+                                    <span>Tài khoản</span>
+                                </a>
+                                <ul id="user-dropdown" class="collapse">
+                                    <li><a href="user.html"><i class="fas fa-user mr-2"></i>Cài đặt></li>
+                                    <li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="cart-show" href="javascript:void(0)">
+                                    <i class="fa-solid fa-cart-shopping"></i>											
+                                    <span>Giỏ hàng (0)</span>
+                                </a>
+                            </li>
+                            <li class="social d-none d-md-inline-block">
+                                <a href="https://www.facebook.com" title="Facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <!-- <img src="img/social/facebook.png" alt="img/social/facebook.png" /> -->
+                                </a>
+                                <a href="https://www.instagram.com" title="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <!-- <img src="img/social/instagram.png" alt="img/social/instagram.png" /> -->
+                                </a>
+                                <a href="https://www.youtube.com" title="YouTube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <!-- <img src="img/social/youtube.png" alt="img/social/youtube.png" /> -->
+                                </a>
+                                <a href="https://www.x.com" title="X">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <!-- <img src="img/social/x.png" alt="img/social/x.png" /> -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 d-none d-md-block">
+                        <nav class="navbar">
+                            <ul class="navbar-nav text-uppercase">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li id="product-dropdown" class="nav-item">
+                                    <a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+                        <a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
+                            <img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+                        </a>
+                        <a id="sidenav" onclick="openNav()">
+                            <img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+                        </a>
+                    </div>
+                    <div id="search-input" class="col-12 px-0 collapse">
+                        <div class="input-group pb-3">
+                            <input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+                            <div class="input-group-append">
+                                <button id="btn-navbarSearch" class="btn btn-primary">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Header end -->
+      <!-- Content start -->
+	<div id="content">
+		<div class="container">
+			<!-- Kết thúc Thanh toán -->
+<div id="checkout">
+    <h4 class="text-uppercase text-center font-weight-bold mb-5">Thanh toán</h4>
+    <div class="row no-gutters">
+        <div class="col-md-6 col-lg-4 billing">
+            <h6 class="text-uppercase font-weight-bold">1. Thông tin thanh toán</h6>
+            <div class="wrap pt-4 pr-3">
+                <div class="form-group row">
+                    <div class="col-8">
+                        <input type="email" class="form-control" placeholder="Địa chỉ email" />
+                        <i class="far fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="form-group row mb-3 user">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Tên" />
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Họ" />
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-8">
+                        <input type="number" class="form-control" placeholder="Số điện thoại" />
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </div>
+                <div id="first-address">
+                    <div class="form-group row mb-3 address">
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Địa chỉ" />
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="col-4 unit">
+                            <input type="text" class="form-control" placeholder="Căn hộ/Đơn vị" />
+                        </div>
+                    </div>
+                    <div class="form-group row city">
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Thành phố" />
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3 state">
+                        <div class="col-8 col-md-6">
+                            <select class="custom-select arrow" name="state" required>
+                                <option selected value="">Tỉnh/Thành phố</option>
+                                <option value="1">Anh</option>
+                                <option value="2">Pháp</option>
+                                <option value="3">Đức</option>
+                                <option value="4">Ý</option>
+                                <option value="5">Serbia</option>
+                                <option value="6">Hoa Kỳ</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-6 zip">
+                            <input type="text" class="form-control" placeholder="Mã bưu chính" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                            <span class="checkbox-span"></span>
+                            Tạo tài khoản để thanh toán nhanh hơn. (Tùy chọn)
+                        </label>
+                    </div>
+                    <div class="col-lg-12 shipping-check">
+                        <label class="form-check-label">
+                            <input id="shipping-check" data-toggle="collapse" href="#new-address" role="button" aria-expanded="false" aria-controls="new-address" class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+                            <span class="checkbox-span"></span>
+                            Gửi hàng đến địa chỉ khác
+                        </label>
+                    </div>
+                </div>
+                <div id="new-address" class="collapse">
+                    <div class="form-group row address">
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Địa chỉ" />
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="col-4 unit">
+                            <input type="text" class="form-control" placeholder="Căn hộ/Đơn vị" />
+                        </div>
+                    </div>
+                    <div class="form-group row city">
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Thành phố" />
+                        </div>
+                    </div>
+                    <div class="form-group row state mb-0">
+                        <div class="col-8 col-md-6">
+                            <select class="custom-select arrow" name="state" required>
+                                <option selected value="">Tỉnh/Thành phố</option>
+                                <option value="1">Anh</option>
+                                <option value="2">Pháp</option>
+                                <option value="3">Đức</option>
+                                <option value="4">Ý</option>
+                                <option value="5">Serbia</option>
+                                <option value="6">Hoa Kỳ</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-6 zip">
+                            <input type="text" class="form-control" placeholder="Mã bưu chính" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 payment">
+            <h6 class="text-uppercase font-weight-bold px-4">2. Thanh toán</h6>
+            <div class="wrap pt-4 px-4 second">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required />
+                    <span class="checkmark"></span>
+                    <label class="form-check-label ml-4 font-weight-bold" for="inlineRadio1">PayPal</label>
+                    <img src="img/icon/paypal.png" alt="img/icon/paypal.png" class="icon" />
+                </div>
+                <p class="pt-4 pb-5 pl-1"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside">PayPal là gì?</a></p>
+                <div class="payment">
+                    <i class="fas fa-lock"></i>
+                    <p class="font-weight-bold">Thanh toán thẻ tín dụng an toàn</p>
+                    <p class="small">Đây là giao dịch được mã hóa SSL TLS 1.2 bảo mật.</p>
+                </div>
+                <div class="form-check credit-card mt-4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1" required />
+                    <span class="checkmark"></span>
+                    <label class="form-check-label ml-4 font-weight-bold" for="inlineRadio2">Thẻ<br />Tín dụng</label>
+                    <div class="payment-card">
+                        <img src="img/pay/visa-2.png" title="Visa" alt="img/pay/visa-2.png" />
+                        <img src="img/pay/master-card-2.png" title="MasterCard" alt="img/pay/master-card-2.png" />
+                        <img src="img/pay/maestro-2.png" title="Maestro" alt="img/pay/maestro-2.png" />
+                        <img src="img/pay/american-express-2.png" title="American Express" alt="img/pay/american-express-2.png" />
+                    </div>
+                </div>
+                <div class="form-group row py-3">
+                    <div class="col-8">
+                        <input type="number" class="form-control card" placeholder="Số thẻ" />
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="form-group row no-gutters card-number">
+                    <div class="col-4 col-lg-4 pr-1">
+                        <select class="custom-select arrow" name="state" required>
+                            <option selected value="">Tháng</option>
+                            <option value="1">Th1</option>
+                            <option value="2">Th2</option>
+                            <option value="3">Th3</option>
+                            <option value="4">Th4</option>
+                            <option value="5">Th5</option>
+                            <option value="6">Th6</option>
+                            <option value="7">Th7</option>
+                            <option value="8">Th8</option>
+                            <option value="9">Th9</option>
+                            <option value="10">Th10</option>
+                            <option value="11">Th11</option>
+                            <option value="12">Th12</option>
+                        </select>
+                    </div>
+                    <div class="col-4 col-lg-4 pr-1">
+                        <select class="custom-select arrow" name="state" required>
+                            <option selected value="">Năm</option>
+                            <option value="1">2018</option>
+                            <option value="2">2019</option>
+                            <option value="3">2020</option>
+                            <option value="4">2021</option>
+                            <option value="5">2022</option>
+                            <option value="6">2023</option>
+                            <option value="7">2024</option>
+                            <option value="8">2025</option>
+                        </select>
+                    </div>
+                    <div class="col-4 col-lg-4 cvv">
+                        <input type="number" class="form-control" placeholder="CVV/CVC" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mt-md-5 offset-md-6 col-lg-4 offset-lg-0 mt-lg-0 confirmation">
+            <h6 class="text-uppercase font-weight-bold px-4">3. Xác nhận</h6>
+            <div class="wrap pl-4 pt-4">
+                <div class="promo-code">
+                    <h6 class="text-uppercase font-weight-bold">Nhập mã khuyến mãi tại đây</h6>
+                    <a class="btn-collapse" data-toggle="collapse" href="#promo-code" role="button" aria-expanded="true" aria-controls="promo-code" title="Thu gọn"></a>
+                    <div id="promo-code" class="collapse show">
+                        <div class="input-group enter-code">
+                            <input type="text" class="code" placeholder="Nhập mã khuyến mãi" />
+                            <button id="btn-apply" class="btn btn-primary" disabled>Dùng</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="order-summary">
+                    <h5 class="text-uppercase text-center font-weight-bold m-0">Tổng quan đơn hàng</h5>
+                    <div id="subtotal" class="text-uppercase">
+                        <p class="font-weight-bold">Tổng cộng<span class="text-danger font-weight-bold float-right">680.000 đ</span></p>
+                        <p>Vận chuyển dự kiến<span class="font-weight-bold text-capitalize float-right">Miễn phí</span></p>
+                        <p>Thuế dự kiến<span class="font-weight-bold float-right">0 đ</span></p>
+                        <div id="total" class="font-weight-bold">
+                            <p>Tổng thanh toán<span class="float-right">680.000 đ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="order-now" class="text-uppercase">
+                    <button id="btn-order-now" class="btn btn-primary text-uppercase font-weight-bold">Đặt hàng ngay</button>
+                </div>
+            </div>
+        </div>
+        
+				</div>
+			</div>
+
+
+
+
+			<!-- Checkout end -->
+		</div>
+	</div>
+	<!-- Content end -->
+     	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-lg-3">
+					<h5>Giới thiệu</h5>
+					<div class="about-us">
+						<img src="img/logo.png" class="logo" alt="img/logo.png" />
+						<p>Công ty chúng tôi chuyên cung cấp các loại phụ tùng ô tô chất lượng cao từ các thương hiệu uy tín hàng đầu thế giới. Với cam kết đem đến cho khách hàng những sản phẩm bền bỉ, đáng tin cậy và giá cả cạnh tranh, chúng tôi cung cấp đa dạng các loại phụ tùng từ hệ thống phanh, bộ giảm xóc, hệ thống lái, đến các bộ phận động cơ và cảm biến. Đội ngũ tư vấn viên chuyên nghiệp luôn sẵn sàng hỗ trợ khách hàng tìm kiếm giải pháp tối ưu cho nhu cầu sửa chữa và bảo trì xe. Đến với chúng tôi, bạn hoàn toàn có thể yên tâm về chất lượng sản phẩm và dịch vụ chăm sóc khách hàng.</p>
+					</div>
+					<div class="contact">
+						<p class="mb-0">
+							<i class="fas fa-phone"></i> 0949772176
+						</p>
+						<p class="mb-0">
+							<i class="fas fa-fax"></i>Mã số thuế : 0316885478
+						</p>
+						<p class="mb-0">
+							<i class="fas fa-envelope"></i>Email:<a class="email" href="mailto:emailto@mail.com" title="Send message"> autotrust@email.com</a>
+						</p>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com" title="Facebook">
+							<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+						</a>
+						<a href="https://www.instagram.com" title="Instagram">
+							<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+						</a>
+						<a href="https://www.youtube.com" title="YouTube">
+							<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+						</a>
+						<a href="https://www.x.com" title="X">
+							<img src="img/social/x.png" alt="img/social/x.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul>
+								<li><i class="fas fa-angle-double-right"></i><a href="javascript:void(0)">Trang Chủ</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="product.html">Sản phẩm</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="about-us.html">Giới thiệu</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="contact.html">Liên hệ</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-12 pay">
+							<h5 class="mt-4">Phương thức thanh toán</h5>
+							<img src="img/pay/visa.png" title="Visa" alt="img/pay/visa.png" />
+							<img src="img/pay/master-card.png" title="MasterCard" alt="img/pay/master-card.png" />
+							<img src="img/pay/momo.png" title="Momo" alt="img/pay/momo.png" />
+							<img src="img/pay/vnpay.png" title="VnPay" alt="img/pay/vnpay.png" />
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<h5>Giờ làm việc</h5>
+					<p class="font-weight-bold">Văn phòng</p>
+					<p>Thứ 2 - Thứ 6
+						<br /><span class="font-weight-bold">08h:00 - 19h:00</span> </p>
+					<p>Thứ 7
+						<br /><span class="font-weight-bold">08h:00 - 14h:00</span> </p>
+					<p class="pt-4 font-weight-bold">Cửa hàng</p>
+					<p>Thứ 2 - Thứ 6
+						<br /><span class="font-weight-bold">08h:00 - 19h:00</span> </p>
+					<p>Thứ 7
+						<br /><span class="font-weight-bold">08h:00- 14h:00 </span></p>
+					<p><span class="text-uppercase">đóng cửa</span> vào chủ nhật</p>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<h5>Liên hệ ngay</h5>
+					<form action="">
+						<label>Tên * </label>
+						<input type="text" name="name" required />
+						<label>Email * </label>
+						<input type="email" name="email" required />
+						<label>Lời nhắn * </label>
+						<textarea name="mssg" required rows="3" placeholder="Nhập lời nhắn của bạn ... "></textarea>
+						<button id="btn-send" class="btn mt-2" type="submit">Gửi</button>
+					</form>
+					<h5 class="mt-4">Đăng ký nhận tin</h5>
+					<p class="subscribe">Đăng ký nhận tin để được cập nhật thông tin mới nhất về chương trình khuyến mãi và các ưu đãi đặc biệt	của chúng tôi</p>
+					<form action="">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Nhập địa chỉ Email của bạn" aria-describedby="basic-addon2" required />
+							<button id="btn-subscribe" class="btn" type="submit">Đăng ký</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+    <a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<script src="jq/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+	<!-- JavaScript links end -->
+</body>
+
+</html>
